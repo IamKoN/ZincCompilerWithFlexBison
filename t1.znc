@@ -1,0 +1,16 @@
+program 
+    var N : integer; 
+    var SQRT : integer; 
+begin 
+    N := readInt;
+    SQRT := 0;  
+    -- go until SQRT exceeds the square root of N }
+    while SQRT * SQRT <= N loop 
+        SQRT := SQRT + 1; 
+    endwhile; 
+
+    SQRT := SQRT - 1; -- subtract one SQRT is <= sqrt(N)
+
+    writeInt(SQRT); 
+
+end 
